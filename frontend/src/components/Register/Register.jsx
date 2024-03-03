@@ -12,7 +12,7 @@ export default function Register() {
     const navigate = useNavigate();
 
     // Mutation for registering user
-    const registerMutation = useMutation(data => axios.post('http://localhost:8080/api/v1/user/signup', data),{
+    const registerMutation = useMutation(data => axios.post('https://todolist-backend-m85o.onrender.com/api/v1/user/signup', data),{
         onSuccess: (data) => {
             console.log(data);
             toast.success('Registration successful')
