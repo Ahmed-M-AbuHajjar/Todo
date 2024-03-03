@@ -19,7 +19,7 @@ export default function RemoveTodo ({ todo, onClose }) {
                 },
             };
             // Make delete request to remove todo
-            await axios.delete(`http://localhost:8080/api/v1/todo/delete/${todo._id}`, config);
+            await axios.delete(`https://todolist-backend-m85o.onrender.com/api/v1/todo/delete/${todo._id}`, config);
         },
         {
             // Invalidate query on successful deletion
