@@ -14,7 +14,7 @@ const fetchTodos = async() => {
         },
     };
     // Send GET request to fetch todos
-    const response = await axios.get('http://localhost:8080/api/v1/todo',config);
+    const response = await axios.get('https://todolist-backend-m85o.onrender.com/api/v1/todo',config);
     // Return the todos from the response data
     return response.data.foundTodos
 };
