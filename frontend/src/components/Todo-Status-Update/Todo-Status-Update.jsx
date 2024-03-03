@@ -17,7 +17,7 @@ export default function TodoStatusUpdate ({ todo }) {
             },
           };
           // Send PATCH request to update todo status
-          return axios.patch(`http://localhost:8080/api/v1/todo/update/status/${updatedTodo._id}`, { status: updatedTodo.status }, config);
+          return axios.patch(`https://todolist-backend-m85o.onrender.com/api/v1/todo/update/status/${updatedTodo._id}`, { status: updatedTodo.status }, config);
         },
         {
           onSuccess: () => {
